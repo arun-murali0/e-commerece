@@ -1,12 +1,8 @@
 import express from 'express';
-import { errorHandler } from './utils/errorHandler';
+import { DatabaseConnection } from './db';
+
 const app = express();
 
-
-
-
-
-// error handler
-app.use(errorHandler)
+DatabaseConnection();
 
 export { app };
